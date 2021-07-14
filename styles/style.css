@@ -10,7 +10,7 @@ body {
 /* animation */
 @keyframes changeWidth {
     from {
-        transform: scale(0.5) rotate(0deg);
+        transform: scale(0.4) rotate(0deg);
     }
 
     to {
@@ -151,4 +151,56 @@ ul li a:hover {
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
+}
+
+
+/* highlight section styles */
+
+.all-highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 180px;
+    margin-right: 210px;
+}
+
+.highlight-details {
+    margin-right: 66px;
+    margin-top: 155px;
+}
+
+.highlight-details h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.highlight-details p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #6C6C6C;
+    text-align: justify;
+    margin-top: -20px;
+}
+
+.highlight-details a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.higlight-banner {
+    margin-top: 95px;
+}
+
+.higlight-banner img {
+    width: 490px;
+    height: 427px;
+    border-radius: 8px;
+}
+
+.higlight-banner img:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
 }
