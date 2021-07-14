@@ -13,6 +13,22 @@ nav {
     height: 680px;
 }
 
+/* animation */
+@keyframes changeWidth {
+    from {
+        transform: scale(0.5) rotate(0deg);
+    }
+
+    to {
+        transform: scale(1.2) rotate(360deg);
+    }
+}
+
+nav:hover .banner-img {
+
+    animation: changeWidth 5s ease-in 0s infinite alternate;
+}
+
 .nav-menu {
     display: flex;
     justify-content: space-between;
