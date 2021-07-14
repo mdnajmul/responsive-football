@@ -1,27 +1,48 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* header nav menu style */
+
+nav {
+    background-color: #2D25A0;
+    height: 680px;
+}
 
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 1160px;
-    margin-left: 80px;
-    margin-right: ;
+    margin-left: 60px;
+    padding-top: 42px;
 }
 
 ul {
     display: flex;
     flex-direction: row;
+    padding-left: 0px;
 }
 
 ul li {
     list-style: none;
-    margin: 0 10px;
+    margin-right: 36px;
 }
 
 ul li a {
     text-decoration: none;
-    /* color: white; */
+    color: white;
+}
+
+ul li a:hover {
+    background-color: #E02C6D;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: .5s;
 }
 
 .login-btn {
@@ -33,4 +54,40 @@ ul li a {
 .login-btn a {
     text-decoration: none;
     color: white;
+}
+
+.banner-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1100px;
+    margin-top: 50px;
+}
+
+.banner-details {
+    margin-left: 156px;
+}
+
+.banner-details h1 {
+    font-size: 64px;
+    width: 485px;
+    font-weight: 700;
+    color: white;
+}
+
+.banner-details a {
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.banner-img {
+    margin-left: 100px;
+}
+
+.banner-img img {
+    width: 556px;
+    height: 438px;
 }
