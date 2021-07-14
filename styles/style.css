@@ -224,7 +224,7 @@ ul li a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 143px;
+    margin-left: 155px;
 }
 
 .social a {
@@ -258,6 +258,8 @@ ul li a:hover {
 .foot-section p {
     margin-left: 123.94px;
     margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
 }
 
 /* ----------------------------------
@@ -348,7 +350,7 @@ ul li a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 27px;
-        margin: 47px 15px 15px 15px;
+        margin: 47px 15px -35px 15px;
     }
 
     /* highlight section responsive styles */
@@ -386,9 +388,9 @@ ul li a:hover {
     /* footer section responsive styles */
 
     .foot-section {
-        margin-left: 16px;
+        margin-left: 20px;
         margin-right: 71px;
-        margin-bottom: 300px;
+        margin-bottom: 220px;
     }
 
     .foot-section img {
@@ -399,12 +401,12 @@ ul li a:hover {
     .social {
         display: flex;
         flex-direction: row;
-        margin-left: 95px;
-        margin-right: 95px;
+        margin-left: 75px;
+        margin-right: 115px;
     }
 
     .foot-section p {
-        margin-left: 80px;
+        margin-left: 55px;
     }
 }
 
@@ -412,4 +414,155 @@ ul li a:hover {
 
 /* ----------------------- Tablet Devices ------------------------ */
 
-@media only screen and (min-width: 689px) and (max-width: 991px) {}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+
+    /* animation for respnsive */
+    @keyframes changeWidth {
+        from {
+            transform: scale(0.4) rotate(0deg);
+        }
+
+        to {
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+
+    nav:hover .banner-img {
+
+        animation: changeWidth 5s ease-in 0s infinite alternate;
+    }
+
+    /* header nav menu responsive style */
+
+    nav {
+        background-color: #2D25A0;
+        height: 100%;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 100%;
+    }
+
+    ul li {
+        list-style: none;
+        margin-right: 20px;
+        font-size: 16px;
+    }
+
+    /* header banner section responsive style */
+
+    .banner-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .banner-details {
+        margin-left: 260px;
+        margin-bottom: 50px;
+    }
+
+    .banner-details h1 {
+        font-size: 36px;
+        width: 100%;
+        font-weight: 700;
+        color: white;
+    }
+
+    .banner-details a {
+        text-decoration: none;
+        background-color: #E02C6D;
+        color: white;
+        padding: 10px 24px;
+        border-radius: 5px;
+    }
+
+    .banner-img {
+        margin-left: 90px;
+        margin-bottom: 60px;
+    }
+
+    .banner-img img {
+        width: 556px;
+        height: 438px;
+    }
+
+    /* players section responsive style */
+
+    .all-players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 27px;
+        margin: 47px 15px -35px 35px;
+    }
+
+    /* highlight section responsive styles */
+
+    .all-highlights {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+
+    .highlight-details {
+        margin-right: 20px;
+    }
+
+    .highlight-details h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .highlight-details p {
+        font-size: 16px;
+        font-weight: normal;
+        color: #6C6C6C;
+        text-align: justify;
+        margin-top: -20px;
+        margin-left: 25px;
+    }
+
+    .highlight-details a {
+        margin-left: 25px;
+    }
+
+    .higlight-banner {
+        margin: 50px 16px 40px 16px;
+    }
+
+    .higlight-banner img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    /* footer section responsive styles */
+
+    .foot-section {
+        margin-left: 16px;
+        margin-right: 71px;
+        margin-bottom: 600px;
+    }
+
+    .foot-section img {
+        width: 100%;
+        height: 110px;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        margin-left: 260px;
+        margin-right: 260px;
+    }
+
+    .foot-section p {
+        margin-left: 240px;
+    }
+}
