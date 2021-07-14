@@ -1,0 +1,36 @@
+/* header nav menu style */
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin-left: 80px;
+    margin-right: ;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+.login-btn {
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+.login-btn a {
+    text-decoration: none;
+    color: white;
+}
