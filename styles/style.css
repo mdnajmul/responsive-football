@@ -4,6 +4,7 @@
 /* common style */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
 
@@ -192,6 +193,7 @@ ul li a:hover {
 
 .higlight-banner {
     margin-top: 95px;
+    margin-bottom: 158px;
 }
 
 .higlight-banner img {
@@ -203,4 +205,57 @@ ul li a:hover {
 .higlight-banner img:hover {
     transform: scale(1.1);
     transition: transform 2s ease-in-out;
+}
+
+/* footer section styles */
+
+.foot-section {
+    margin-left: 475px;
+    margin-right: 481px;
+    margin-bottom: 63px;
+}
+
+.foot-section img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 143px;
+}
+
+.social a {
+    text-decoration: none;
+    margin-left: 14px;
+}
+
+.social a i {
+    color: rgb(233, 227, 227);
+    background-color: #969BAB;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fa-instagram:hover {
+    color: #8a3ab9;
+}
+
+.fa-dribbble:hover {
+    color: #ea4c89;
+}
+
+.fa-twitter:hover {
+    color: #52A8E7;
+}
+
+.fa-youtube:hover {
+    color: #c4302b;
+}
+
+.foot-section p {
+    margin-left: 123.94px;
+    margin-top: 20px;
 }
